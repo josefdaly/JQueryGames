@@ -1,0 +1,51 @@
+.tower {
+  width: 200px;
+  height: 100px;
+  float: left;
+  border-bottom: 26px solid black;
+  padding: 50px;
+  margin: 10px;
+}
+
+.tower:hover{
+  border-bottom: 26px solid purple;
+}
+
+.disc {
+  margin: 10px auto 0 auto;
+  border-radius: 45px;
+  height: 33%;
+}
+
+.small {
+  background: red;
+  width: 40%;
+}
+
+.medium {
+  background: blue;
+  width: 60%;
+
+}
+
+.large {
+  background: green;
+  width: 100%;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  height: 400px;
+  min-width: 1000px;
+  display: block;
+  margin: auto;
+}
+
+.disc.won {
+  background: orange;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Towers of Hanoi</title>
+    <link rel="stylesheet" type="text/css" href="../css/hanoi.css">
+  </head>
+  <body>
+    <script src="../js/jquery-2.1.1.js"></script>
+    <!-- Whackjobs at GithubPages don't understand symlinks... -->
+    <script src="../hanoi-core-solution/hanoi-core.js"></script>
+    <script src="../js/hanoi-view.js"></script>
+
+    <p>Towers of Hanoi</p>
+    <content class="container group">
+      <div data-towerIndex="0" class="tower first">
+        <div class="disc"></div>
+        <div class="disc"></div>
+        <div class="disc"></div>
+      </div>
+      <div data-towerIndex="1" class="tower second">
+        <div class="disc"></div>
+        <div class="disc"></div>
+        <div class="disc"></div>
+      </div>
+      <div data-towerIndex="2" class="tower third">
+        <div class="disc"></div>
+        <div class="disc"></div>
+        <div class="disc"></div>
+      </div>
+    </content>
+    <p class="end-message"></p>
+
+
+    <script type="text/javascript">
+      var view = new Hanoi.View(new Hanoi.Game(), $(".container"));
+    </script>
+  </body>
+</html>

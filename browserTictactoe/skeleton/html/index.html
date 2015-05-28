@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="../css/ttt.css">
+  </head>
+  <body>
+    <script src="../js/jquery-2.1.1.js"></script>
+    <!-- Whackjobs at GithubPages don't understand symlinks... -->
+    <script src="../../ttt-core-solution/ttt-core.js"></script>
+    <script src="../js/ttt-view.js"></script>
+
+    <p>Tic Tac Toe</p>
+    <content class="container group"></content>
+    <p class="end-message"></p>
+
+
+    <script type="text/javascript">
+      var $container = $(".container");
+      var view = new TTT.View(new TTT.Game(), $container);
+    </script>
+  </body>
+</html>

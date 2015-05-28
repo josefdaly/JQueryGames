@@ -1,0 +1,63 @@
+.square {
+  float: left;
+  border: 5px solid black;
+  height: 150px;
+  width: 150px;
+}
+
+p {
+  display: block;
+  margin: auto;
+  font-size: 114px;
+  font-family: 'helvetica';
+  text-align: center;
+}
+
+.unplayed {
+  background: grey;
+}
+
+.container {
+  margin: auto;
+  display: block;
+  width: 480px;
+  border: solid 5px;
+
+}
+
+.unplayed:hover {
+  background: yellow;
+}
+.row {
+  clear: both;
+}
+
+.x {
+  background: white;
+  color: blue;
+  font-size: 114px;
+  text-align: center;
+  font-family: 'helvetica';
+}
+
+.o {
+  background: white;
+  color: purple;
+  font-size: 114px;
+  text-align: center;
+  font-family: 'helvetica';
+}
+
+.winner.played {
+  background: teal;
+}
+
+.played {
+  background: white;
+}
+
+.group::after {
+  content: "";
+  display: block;
+  clear: both;
+}
